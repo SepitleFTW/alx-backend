@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""hypermedia_del_paginaiton
+"""Task 3: Deletion-resilient hypermedia pagination
 """
 
 import csv
@@ -8,14 +8,14 @@ from typing import Dict, List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """gets index range from given page and page size
+    """Retrieves the index range from a given page and page size.
     """
 
     return ((page - 1) * page_size, ((page - 1) * page_size) + page_size)
 
 
 class Server:
-    """paginate a dtabase by popular names
+    """Server class to paginate a database of popular baby names.
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
