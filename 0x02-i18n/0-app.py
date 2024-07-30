@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-"""
-flask application task
-"""
-
+'''first task
+'''
 
 from flask import Flask, render_template
 
@@ -10,8 +8,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index:
-    """origi route"""
+def index():
+    '''default rosadaute'''
     return render_template("0-index.html",)
 
 
