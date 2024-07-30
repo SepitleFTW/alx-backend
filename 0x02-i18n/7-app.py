@@ -47,7 +47,7 @@ def before_request() -> None:
     g.user = get_user()
 
 
-@babel.localeselector
+#@babel.localeselector
 def get_locale() -> str:
     """Retrieves the locale for a web page.
 
@@ -65,7 +65,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-@babel.timezoneselector
+#@babel.timezoneselector
 def get_timezone() -> str:
     """Retrieves the timezone for a web page.
     """
