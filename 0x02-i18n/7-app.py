@@ -65,7 +65,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-#@babel.timezoneselector
+
 def get_timezone() -> str:
     """Retrieves the timezone for a web page.
     """
