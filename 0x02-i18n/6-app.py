@@ -46,6 +46,7 @@ def before_request() -> None:
     g.user = get_user()
 
 
+@babel.localeselector
 def get_locale() -> str:
     """Retrieves the locale for a web page.
 
@@ -75,7 +76,7 @@ def index() -> str:
 # uncomment this line and comment the @babel.localeselector
 # you get this error:
 # AttributeError: 'Babel' object has no attribute 'localeselector'
-babel.init_app(app, locale_selector=get_locale)
+# babel.init_app(app, locale_selector=get_locale)
 
 
 if __name__ == "__main__":
